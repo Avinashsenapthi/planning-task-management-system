@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ── Layout ── */
+.dashboard {
+  display: flex !important;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #1e2235;
+  color: #c8cfe8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  padding: 24px 20px 4px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sidebar small {
+  display: block;
+  padding: 2px 20px 16px;
+  font-size: 11px;
+  color: #7880a0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-nav {
+  padding: 12px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: #8890b0 !important;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.06);
+  color: #ffffff !important;
+}
+
+.sidebar a.active {
+  background: rgba(99,120,255,0.15);
+  color: #ffffff !important;
+  border-left: 3px solid #6378ff;
+}
+
+.sidebar-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 10px 0;
+}
+
+/* ── Main area ── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+}
+
+/* ── Navbar ── */
+.navbar {
+  height: 64px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1d2e;
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #6378ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ── Content ── */
+.content {
+  padding: 28px;
+  background: #f0f2f7;
+  flex: 1;
+}
